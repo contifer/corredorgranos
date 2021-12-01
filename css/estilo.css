@@ -1,0 +1,484 @@
+/******************** GENERALES********************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ol, ul {
+    list-style-type: none;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+  }
+
+.fondos-foto {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.h1{
+    background-color: rgba(255, 255, 255, 0.9);    margin: 5px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin: 6px;
+    color: #121212;
+}
+
+.h3{
+    background-color: rgba(211, 211, 211, 0.8);    margin: 5px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin: 6px;
+}
+
+iframe, img{
+    width:302px;
+    height: 170px;
+}
+
+.header__img{
+    width: 20px;
+    height: 20px;
+}
+
+/******************** GRID HOME ********************/
+/* Mobile first */    
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "article-parrafo1"
+    "article-img" 
+    "article-parrafo2"
+    "article-iframe"
+    "footer";
+    grid-template-rows: 70px auto auto auto auto auto auto;
+    grid-template-columns: auto;
+}
+
+#grilla-pizarra{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "pizarras-title"
+    "cereales"
+    "futuros"
+    "matba"
+    "dolar"
+    "footer";
+}
+
+#grilla-contacto{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "cliente" 
+    "rrhh"
+    "footer";
+
+}
+
+#grilla-granos{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "article1" 
+    "article2"
+    "footer";
+
+}
+.granos-tabla{
+    margin:20px 5px;
+    font-size: smaller;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+    *{
+        font-size: xx-small;
+       
+    }
+    iframe{
+        width:224px;
+        height: 126px;
+        border-style: dashed;
+    }
+}
+
+
+
+.aside__ul{
+    padding: 70px 20px;
+}
+.aside__ul li{
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+}
+
+/******************** HEADER ********************/
+.header{
+    background-color: #00de00;
+    color: white;
+    padding: 10px;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* NAV */
+
+.header__nav-ul li{
+    margin: 0px 20px 0px 20px;
+    display: inline-block;
+    font-weight: bolder;
+}
+
+/******************** MAIN ********************/
+/*  Aside  */
+
+.aside{
+    grid-area: aside;
+    background-color: #2d2d2d;
+}
+
+.aside__ul{
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.aside__ul li{
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 5px 0px 5px 0px;
+    box-shadow: 0 1px 3px grey, 0 1px 2px grey;
+}
+
+/*  ARTICLES  */
+
+article{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+}
+
+.article__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.6;
+    padding: 30px 50px;
+}
+
+#article-img{
+    grid-area: article-img;
+}
+
+#article-parrafo1{
+    grid-area: article-parrafo1;
+}
+
+#article-parrafo2{
+    grid-area: article-parrafo2;
+}
+
+#article-iframe{
+    grid-area: article-iframe;
+}
+
+.article-granos{
+    display: flex;
+    flex-direction: column;
+}
+
+#article1{
+    grid-area: article1;
+}
+
+
+#article2{
+    grid-area: article2;
+}
+
+
+/******************** FOOTER ********************/
+.footer{
+    background-color: #ECECEC;
+    grid-area: footer;
+    display: flex;
+   flex-direction: row-reverse;
+
+}
+.footer__ul{
+    display: inline-flex;
+}
+
+.footer__ul li{
+margin:5px;
+}
+.footer__ul img{
+    height: 40px;
+    width: 40px;
+}
+/******************** GRANOS ********************/
+
+.div-detalle{
+    padding: 20px;
+}
+
+/******************** TRIGO ********************/
+
+.trigo{
+    background-image: url("../assets/img/trigo.jpg");
+}
+
+/******************** GIRASOL ********************/
+
+.girasol{
+    background-image: url("../assets/img/girasol.jpg");
+    color: white;
+}
+
+/******************** SOJA ********************/
+
+.soja{
+    background-image: url("../assets/img/soja.jpg");
+    color: black;
+}
+
+/******************** MAIZ ********************/
+
+.maiz{
+    background-image: url("../assets/img/maiz.jpg");
+    color: white;
+}
+
+/******************** CONTACTO ********************/
+
+.contacto{
+    background-image: url("../assets/img/contacto.jpg");
+    color: black;
+}
+.contacto-h{
+    margin: 10px;
+}
+
+.contacto input{
+    margin: 20px;
+}
+.rrhh{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.rrhh img{
+    width: 160px;
+    height: 121px;
+    margin: 15px;
+}
+
+.cliente{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.contacto-btn{
+    padding: 10px;
+    background-color: #ECECEC;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    padding: 5px;
+    width: 300px;
+}
+/******************** PIZARRA ********************/
+
+.pizarras{
+    background-image: url("../assets/img/pizarra.jpg");
+    color: black;
+}
+
+.pizarras-title{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    grid-area: pizarras-title;
+}
+
+.pizarra__tabla{
+    margin: 8px;
+}
+
+
+#cereales {
+    grid-area: cereales;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#futuros {
+    grid-area: futuros;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#matba {
+    grid-area: matba;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#dolar {
+    grid-area: dolar;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#cliente {
+    grid-area: cliente;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#rrhh {
+    grid-area: rrhh;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* Desktop */    
+@media only screen and (min-width: 1024px) {
+
+    .granos-tabla{
+        margin:40px 5px;
+        font-size: medium;
+    }
+    
+    iframe, img{
+        width:448px;
+        height: 252px;
+    }
+    
+    .header__img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .article-granos{
+        padding: 30px;
+    }
+    
+    .rrhh img{
+        width: 320px;
+        height: 243px;
+        margin: 15px;
+    }
+    
+    
+    #grilla{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "aside article-img article-parrafo1"
+            "aside article-parrafo2 article-iframe"
+            "footer footer footer";
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: 220px 1fr 1fr;
+        }
+    
+    #grilla-pizarra{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "aside pizarras-title pizarras-title"
+        "aside cereales futuros"
+        "aside matba dolar"
+        "footer footer footer";
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 220px auto auto;
+    }
+    
+    #grilla-contacto{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "aside cliente rrhh"
+        "footer footer footer";
+        grid-template-columns: 220px auto auto;
+    }
+    
+    #grilla-granos{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "aside article1" 
+        "aside article2"
+        "footer footer";
+        grid-template-columns: 220px auto auto;
+    
+    }
+    
+    }
+    
