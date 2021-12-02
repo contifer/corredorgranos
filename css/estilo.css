@@ -8,6 +8,13 @@
 a{
     text-decoration: none;
     color: inherit;
+    transition: font-size 2s;
+
+}
+
+a:hover{
+    font-size: 20px;
+    cursor: pointer;
 }
 ol, ul {
     list-style-type: none;
@@ -49,6 +56,22 @@ iframe, img{
 .header__img{
     width: 20px;
     height: 20px;
+    animation-name: efecto_header__img;
+    animation-duration: 2s;
+    position: relative;
+
+}
+.aside__li{
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    transition: background-color 2s;
+
+}
+
+.aside__li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
 /******************** GRID HOME ********************/
@@ -124,10 +147,6 @@ iframe, img{
 
 .aside__ul{
     padding: 70px 20px;
-}
-.aside__ul li{
-    padding: 20px;
-    margin: 10px 0px 10px 0px;
 }
 
 /******************** HEADER ********************/
@@ -482,3 +501,9 @@ textarea{
     
     }
     
+/* ANIMACION */
+
+@keyframes efecto_header__img {
+    0%   {left:100px;}
+    100% {left:0px;} 
+}
