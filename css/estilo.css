@@ -24,14 +24,12 @@ a{
     text-decoration: none;
     color: inherit;
     transition: font-size 2s;
-
 }
 
 a:hover{
-font-weight: 800;
-cursor: pointer;
-color: inherit;
-
+    font-weight: 800;
+    cursor: pointer;
+    color: inherit;
 }
 
 ol, ul {
@@ -44,7 +42,7 @@ table, th, td {
     border: 1px solid gray;
     background-color: white;
     color: black;
-    padding: 3px;
+    padding: 5px;
   }
 
 .fondos-foto {
@@ -95,14 +93,13 @@ iframe, img{
     background-color: #00de00;
     padding: 5px;
 }
-
+/*Imagen logo*/
 .header__img{
     max-width: 40px;
     max-height: 40px;
     animation-name: efecto_header__img;
     animation-duration: 2s;
     position: relative;
-
 }
 
 /* NAV */
@@ -125,9 +122,6 @@ iframe, img{
     color: white;
 }
 
-#nav-toggle-button {
-    color: gray;
-    }
 /******************** MAIN ********************/
 /*  Aside  */
 
@@ -170,8 +164,6 @@ article{
     line-height: 1.6;
     padding: 30px 50px;
 }
-
-
 
 /******************** FOOTER ********************/
 .footer{
@@ -291,7 +283,8 @@ textarea{
     text-align: center;
 }
     
-/* ANIMACION */
+/* ANIMACIONES */
 
 @keyframes efecto_header__img {
     100% {transform: rotate(360deg);}}
+
