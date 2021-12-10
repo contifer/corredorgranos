@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Mi titulo -->
     <title>Cereales broker | Soja</title>
+    <!-- link BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- link estilos css -->
     <link rel="stylesheet" href="../css/estilo.css">
     <!-- Mi icono -->
@@ -19,125 +21,154 @@
 <div class="section fondos-foto soja" id="grilla-granos">
 <!----------  HEADER INICIO ---------->
 <header class="header">
-<!--  Logo inicio  -->
-<a href="../index.html"><img src="../assets/img/icon.svg" alt="" class="header__img"></a>
-<!--  Logo final  -->
-<!--  nav inicio  -->
-<nav class="header__nav">
-    <ul class="header__nav-ul">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="pizarra.html">Pizarra</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul> 
-</nav>
-<!--  nav final  -->
-<!----------  HEADER FINAL ---------->
+    <!--  nav inicio  -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <!--  Logo inicio  -->
+        <img src="../assets/img/icon.svg" alt="" class="header__img  d-flex justify-content-end">
+    <!--  Logo final  -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse my_navbar" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active my_link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link my_link" href="pizarra.html">Pizarra</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link my_link" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    <!--  nav final  -->
 </header>
+<!----------  HEADER FINAL ---------->
 <!----------  MAIN  ---------->
-<!----------  Aside inicio  ---------->
-    <aside class="aside">
-        <ul class="aside__ul">
-            <li class="aside__li"><a href="trigo.html">Trigo</a></li>
-            <li class="aside__li"><a href="maiz.html">Maíz</a></li>
-            <li class="aside__li"><a href="soja.html">Soja</a></li>
-            <li class="aside__li"><a href="girasol.html">Girasol</a></li>
-        </ul> 
-    </aside>
-<!----------  Aside final  ---------->
-<!----------  Articles  ---------->
-        <article class="article-granos" id="article1">
-            <h1 class="h1">
-                Norma de calidad para la comercialización de soja
-            </h1>
-            <h3 class="h3">
-                Libre de insectos y arácnidos vivos
-            </h3>
-            <div class="div-detalle">
-                <h5>
-                    ARBITRAJE: Para los rubros condición “revolcado en tierra”, “olores comercialmente objetables” y 
-                    “granos amohosados”, se establece un arbitraje con un descuento sobre el precio de CERO COMA CINCO
-                    POR CIENTO (0,5%) a DOS POR CIENTO (2,0%) según intensidad.
-                </h5>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <!----------  Aside inicio  ---------->
+            <aside class="aside">
+                <ul class="aside__ul">
+                    <li class="aside__li"><a href="trigo.html">Trigo</a></li>
+                    <li class="aside__li"><a href="maiz.html">Maíz</a></li>
+                    <li class="aside__li"><a href="soja.html">Soja</a></li>
+                    <li class="aside__li"><a href="girasol.html">Girasol</a></li>
+                </ul> 
+            </aside>
+            <!----------  Aside final  ---------->
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-8 detalle-granos">
+            <div class="row">
+                <div class="col-lg-12 div-detalle">
+                    <h1 class="h1">
+                        Norma de calidad para la comercialización de soja
+                    </h1>
+                    <h3 class="h3">
+                        Libre de insectos y arácnidos vivos
+                    </h3>
+                    <div class="div-detalle">
+                        <h5>
+                            ARBITRAJE: Para los rubros condición “revolcado en tierra”, “olores comercialmente objetables” y 
+                            “granos amohosados”, se establece un arbitraje con un descuento sobre el precio de CERO COMA CINCO
+                            POR CIENTO (0,5%) a DOS POR CIENTO (2,0%) según intensidad.
+                        </h5>
+                    </div>
+        
+                </div>
+                <div class="col-lg-12 div-detalle"> 
+                    <h3 class="h3">
+                        Mermas y rebajas
+                    </h3>
+                    <table class="granos-tabla">
+                        <tr>
+                            <th>RUBROS</th>
+                            <th>BASES %</th>
+                            <th>RECIBO</th>
+                            <th>REBAJAS</th>
+                            <th>MERMAS</th>
+                        </tr>
+                        <tr>
+                            <td>Materias extrañas</td>
+                            <td>1,0</td>
+                            <td>3,0</td>
+                            <td>Para valores superiores al 1,0% y hasta el 3,0% a razón del 1,0% por
+                                cada por ciento o fracción proporcional. Para valores superiores al
+                                3,0% a razón del 1,5% por cada por ciento o fracción proporcional</td>
+                            <td>----</td>
+                        </tr>
+                        <tr>
+                            <td>Incluido Tierra</td>
+                            <td>0,5</td>
+                            <td>0,5</td>
+                            <td>Para valores superiores al 0,5% a razón del 1,5% por cada
+                                por ciento o fracción proporcional.</td>
+                            <td>----</td>
+                        </tr>
+                        <tr>
+                            <td>Granos negros</td>
+                            <td>----</td>
+                            <td>1,0</td>
+                            <td>----</td>
+                            <td>----</td>
+                        </tr>
+                        <tr>
+                            <td>Granos quebrados y/o
+                                partidos</td>
+                            <td>20,0</td>
+                            <td>30,0</td>
+                            <td>Para valores superiores al 20,0% y hasta el 25,0% a razón del 0,25%
+                                por cada por ciento o fracción proporcional. Para valores superiores
+                                al 25,0% y hasta el 30,0% a razón del 0,5% por cada por ciento o
+                                fracción proporcional. Para valores superiores al 30,0% a razón del
+                                0,75% por cada por ciento o fracción proporcional.</td>
+                            <td>----</td>
+                            </tr>
+                        <tr>
+                            <td>Granos dañados (brotados, fermentados,
+                                ardidos, dañados por
+                                calor, podridos)</td>
+                            <td>5,0</td>
+                            <td>5,0</td>
+                            <td>Para valores superiores al 5,0% a razón del 1,0% por cada por
+                                ciento o fracción proporcional.</td>
+                            <td>----</td>
+                        </tr>
+                        <tr>
+                            <td>Incluido Granos quemados o “averia”</td>
+                            <td>----</td>
+                            <td>1,0</td>
+                            <td>Para valores superiores al 1,0% a razón del 1,0% por cada por ciento o fracción proporcional.</td>
+                            <td>----</td>
+                        </tr>
+                    </table>
+        
+                </div>
             </div>
-        </article>
-        <article class="article-granos" id="article2">
-            <h3 class="h3">
-                Mermas y rebajas
-            </h3>
-            <table class="granos-tabla">
-                <tr>
-                    <th>RUBROS</th>
-                    <th>BASES %</th>
-                    <th>RECIBO</th>
-                    <th>REBAJAS</th>
-                    <th>MERMAS</th>
-                </tr>
-                <tr>
-                    <td>Materias extrañas</td>
-                    <td>1,0</td>
-                    <td>3,0</td>
-                    <td>Para valores superiores al 1,0% y hasta el 3,0% a razón del 1,0% por
-                        cada por ciento o fracción proporcional. Para valores superiores al
-                        3,0% a razón del 1,5% por cada por ciento o fracción proporcional</td>
-                    <td>----</td>
-                </tr>
-                <tr>
-                    <td>Incluido Tierra</td>
-                    <td>0,5</td>
-                    <td>0,5</td>
-                    <td>Para valores superiores al 0,5% a razón del 1,5% por cada
-                        por ciento o fracción proporcional.</td>
-                    <td>----</td>
-                </tr>
-                <tr>
-                    <td>Granos negros</td>
-                    <td>----</td>
-                    <td>1,0</td>
-                    <td>----</td>
-                    <td>----</td>
-                </tr>
-                <tr>
-                    <td>Granos quebrados y/o
-                        partidos</td>
-                    <td>20,0</td>
-                    <td>30,0</td>
-                    <td>Para valores superiores al 20,0% y hasta el 25,0% a razón del 0,25%
-                        por cada por ciento o fracción proporcional. Para valores superiores
-                        al 25,0% y hasta el 30,0% a razón del 0,5% por cada por ciento o
-                        fracción proporcional. Para valores superiores al 30,0% a razón del
-                        0,75% por cada por ciento o fracción proporcional.</td>
-                    <td>----</td>
-                    </tr>
-                <tr>
-                    <td>Granos dañados (brotados, fermentados,
-                        ardidos, dañados por
-                        calor, podridos)</td>
-                    <td>5,0</td>
-                    <td>5,0</td>
-                    <td>Para valores superiores al 5,0% a razón del 1,0% por cada por
-                        ciento o fracción proporcional.</td>
-                    <td>----</td>
-                </tr>
-                <tr>
-                    <td>Incluido Granos quemados o “averia”</td>
-                    <td>----</td>
-                    <td>1,0</td>
-                    <td>Para valores superiores al 1,0% a razón del 1,0% por cada por ciento o fracción proporcional.</td>
-                    <td>----</td>
-                </tr>
-            </table>
-        </article>
-<!----------  Articles final  ---------->
+        </div>
+    </div>
+</div>
+
 <!----------  MAIN  FINAL ---------->
 <!----------  FOOTER  ---------->
-<footer class="footer">
-    <ul class="footer__ul">
-        <li><a href="#"><img src="../assets/img/face_icon.png" alt=""></a></li>
-        <li><a href="#"><img src="../assets/img/linkedin_icon.png" alt=""></a></li>
-        <li><a href="#"><img src="../assets/img/twitter_icon.png" alt=""></a></li>
-    </ul> 
-</footer>
+<div class="row">
+    <div class="col">
+    <footer class="footer d-flex justify-content-center justify-content-lg-end align-items-center">
+        <ul class="footer__ul">
+            <li><a href="#"><img src="../assets/img/face_icon.png" alt=""></a></li>
+            <li><a href="#"><img src="../assets/img/linkedin_icon.png" alt=""></a></li>
+            <li><a href="#"><img src="../assets/img/twitter_icon.png" alt=""></a></li>
+        </ul> 
+    </footer>
+    </div>
+    </div>
 <!----------  FOOTER FINAL ---------->
-</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
