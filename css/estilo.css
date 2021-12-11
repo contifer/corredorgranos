@@ -36,13 +36,20 @@ ol, ul {
     margin:0px;
     padding: 0px;
 }
-
+table{
+    margin: 10px;
+}
 table, th, td {
     border: 1px solid gray;
     background-color: white;
     color: black;
     padding: 5px;
+    text-align: center;
   }
+
+th {
+    background-color: rgba(211, 211, 211, 0.8);    
+}
 
 .fondos-foto {
     background-position: center;
@@ -66,6 +73,7 @@ table, th, td {
     padding: 2px 6px;
     border-radius: 5px;
     margin: 6px;
+    text-align: center;
 }
 
 iframe, img{
