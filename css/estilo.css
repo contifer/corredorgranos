@@ -128,7 +128,8 @@ iframe, img{
 /*  Aside  */
 
 .aside{
-    background-color: #2d2d2d;
+    background-color: #909090;
+    ;
     height: 100%;
 }
 
@@ -169,7 +170,7 @@ article{
 
 /******************** FOOTER ********************/
 .footer{
-    background-color: #ECECEC;
+    background: linear-gradient(-45deg, #d4fc79, #96e6a1);
 }
 .footer__ul{
     display: flex;
@@ -244,6 +245,7 @@ form input, form textarea{
     height: 242px;
     margin: 15px;
     border-radius: 10px;
+    
 }
 
 .cliente{
@@ -257,7 +259,7 @@ form input, form textarea{
 }
 
 .contacto-btn{
-    padding: 10px;
+    padding: 10px 30px;
     background-color: #ECECEC;
     border-radius: 30px;
     border-style: none;
