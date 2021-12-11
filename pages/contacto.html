@@ -70,19 +70,38 @@
                                 Quiere ser cliente?
                             </h3>
                         </div>
-                        <form action="#" class="form">
-                            <label for="nombre">Nombre:
-                                <input type="text" name="nombre">
-                            </label>
-                            <label for="email">Email:
-                                <input type="email" name="email">
-                            </label>
-                            <textarea name="" id="" cols="60" rows="10" placeholder="comentarios"></textarea><br>
-                            <input type="submit"  class="contacto-btn" value="ENVIAR">
+                         <!--Bootstrap form-->
+                         <form action="#" class="form">
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Su email">
+                          </div>
+                          <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Su nombre">
+                          </div>
+
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Usted es ...">
+                                <datalist id="datalistOptions">
+                                    <option value="Productor">
+                                    <option value="Corredor">
+                                    <option value="Acopio">
+                                    <option value="Otro">
+                                </datalist>
+                          <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Comentarios..."></textarea>
+                          </div>
+                          <input type="submit"  class="contacto-btn" value="ENVIAR">
+
                         </form>
+
                     </article>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6">  
+
+                   
+                    
+
+
                     <article class="rrhh">
                         <div class="h3">
                             <h3 class="contacto-h">
