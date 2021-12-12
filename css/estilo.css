@@ -275,7 +275,16 @@ form input, form textarea{
     background-color: #ECECEC;
     border-radius: 30px;
     border-style: none;
+    transition: background-color 2s;
+
+
 }
+
+.contacto-btn:hover{
+    background-color: #101010;
+    color: #ECECEC;
+}
+
 
 .form{
     display: flex;
