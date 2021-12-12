@@ -195,7 +195,10 @@ article{
 .div-detalle{
     padding: 20px;
 }
-
+/******************** INDEX ********************/
+.index-fondo{
+    background-image: url("../assets/img/wave.svg")
+}
 /******************** TRIGO ********************/
 
 .trigo{
