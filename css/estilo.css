@@ -77,8 +77,9 @@ th {
 }
 
 iframe, img{
-    width:302px;
-    height: 170px;
+    width:324px;
+    height: 183px;
+    border-radius: 7px;
 }
 
 .aside__li{
