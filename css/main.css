@@ -1,5 +1,12 @@
-/* Variables */
-/* Pisando Bootstrap*/
+@charset "UTF-8";
+/* Import */
+/* ANIMACIONES */
+@keyframes efecto_header__img {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Pisando Bootstrap - Modificaciones al código de BS*/
 .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
@@ -13,6 +20,8 @@
   margin-left: auto;
 }
 
+/******************** Variables ********************/
+/* Colores */
 /******************** GENERALES********************/
 * {
   padding: 0;
@@ -98,6 +107,11 @@ iframe, img {
   border-radius: 20px;
 }
 
+/* Páginas de granos */
+.div-detalle {
+  padding: 20px;
+}
+
 /******************** HEADER ********************/
 .header {
   /*background-color: #00de00;*/
@@ -156,9 +170,9 @@ iframe, img {
 }
 .aside__ul div {
   padding: 10px;
-  border: 1px solid #909090;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 5px 0px 5px 0px;
-  box-shadow: 0 1px 3px #909090, 0 1px 2px #909090;
+  box-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(255, 255, 255, 0.1);
 }
 
 /*  ARTICLES  */
@@ -191,11 +205,6 @@ article {
 .footer__ul img {
   height: 40px;
   width: 40px;
-}
-
-/******************** GRANOS ********************/
-.div-detalle {
-  padding: 20px;
 }
 
 /******************** INDEX ********************/
@@ -301,13 +310,6 @@ textarea {
 .pizarras-title {
   padding: 10px;
   text-align: center;
-}
-
-/* ANIMACIONES */
-@keyframes efecto_header__img {
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
