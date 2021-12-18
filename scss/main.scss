@@ -2,6 +2,7 @@
 @import "animaciones";
 @import "pisadas";
 @import "variables";
+@import "maps";
 
 
 /******************** GENERALES********************/
@@ -59,6 +60,8 @@ th {
     border-radius: 5px;
     margin: 6px;
     color: $mi-negro;
+    font-size:map-get($enunciados, enunciado-l);
+
 }
 
 .h3{
@@ -68,6 +71,12 @@ th {
     border-radius: 5px;
     margin: 6px;
     text-align: center;
+    font-size:map-get($enunciados, enunciado-m);
+}
+
+.h5{
+    font-size:map-get($enunciados, enunciado-s);
+
 }
 
 iframe, img{
@@ -92,6 +101,8 @@ iframe, img{
 /* Páginas de granos */
 .div-detalle{
     padding: 20px;
+    font-size:map-get($enunciados, enunciado-s);
+
 }
 
 
@@ -190,47 +201,27 @@ article{
     img{
         height: 40px;
         width: 40px;
-}
-
+    }
 }
 
 /******************** INDEX ********************/
 .index-fondo{
     background-image: url("../assets/img/wave.svg")
 }
-/******************** TRIGO ********************/
 
-.trigo{
-    background-image: url("../assets/img/trigo.jpg");
-}
-
-/******************** GIRASOL ********************/
-
-.girasol{
-    background-image: url("../assets/img/girasol.jpg");
+.girasol, .maiz{
     color: $mi-blanco;
 }
 
-/******************** SOJA ********************/
 
-.soja{
-    background-image: url("../assets/img/soja.jpg");
+.soja, .contacto{
     color: $mi-negro;
 }
 
-/******************** MAIZ ********************/
-
-.maiz{
-    background-image: url("../assets/img/maiz.jpg");
-    color: $mi-blanco;
-}
 
 /******************** CONTACTO ********************/
 
-.contacto{
-    background-image: url("../assets/img/contacto.jpg");
-    color: $mi-negro;
-}
+
 .contacto-h{
     margin: 10px;
     text-align: center;
@@ -240,20 +231,6 @@ form input, form textarea{
     margin: 7px 0px;
 }
 
-.rrhh{
-    color:$mi-blanco;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px;
-    img{
-        width: 320px;
-        height: 242px;
-        margin: 15px;
-        border-radius: 10px;
-    }
-}
 
 
 
@@ -266,6 +243,17 @@ form input, form textarea{
     padding: 15px;
 
 }
+
+.rrhh{
+    @extend .cliente; /* Incorporamos las propiedades de cliente */
+    img{
+        width: 320px;
+        height: 242px;
+        margin: 15px;
+        border-radius: 10px;
+    }
+}
+
 
 .contacto-btn{
     padding: 10px 30px;

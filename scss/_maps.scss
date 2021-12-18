@@ -1,0 +1,24 @@
+/******************** MAPS ********************/
+
+$enunciados: (
+    enunciado-l: 30px, 
+    enunciado-m: 20px, 
+    enunciado-s: 15px
+    );
+
+$ruta: ttt;
+
+$fondos_granos: ( /*Declaramos nuestro mapa*/
+maiz: maiz,
+soja: soja,
+girasol: girasol,
+trigo: trigo,
+contacto: contacto,
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $grano, $fondo_grano in $fondos_granos {
+.#{$grano} {
+   background-image: url("../assets/img/"+$fondo_grano+".jpg");
+
+}
+}
