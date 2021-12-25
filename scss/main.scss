@@ -189,7 +189,13 @@ article{
     line-height: 1.6;
     @include margenes(0px, 30px 50px);
 }
-
+.carousel-inner{
+    img{
+        width: 100%;
+        height: 100%;
+    
+    }
+  }
 /******************** FOOTER ********************/
 .footer{
     background: $fondo-verde;
@@ -236,8 +242,6 @@ article{
 form input, form textarea{
     @include margenes(7px 0px, 0px);
 }
-
-
 
 
 .cliente{
