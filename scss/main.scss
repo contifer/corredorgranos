@@ -202,8 +202,13 @@ article{
     img{
         height: 40px;
         width: 40px;
+        animation-name: animation_footer;
+        animation-duration: 2s;
+        position: relative;
     }
 }
+
+ 
 
 /******************** INDEX ********************/
 .index-fondo{
